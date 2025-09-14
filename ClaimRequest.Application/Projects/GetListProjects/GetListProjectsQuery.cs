@@ -1,0 +1,13 @@
+﻿using ClaimRequest.Application.Abstraction.Messaging;
+using ClaimRequest.Application.Abstraction.Query;
+using ClaimRequest.Domain.Common;
+
+namespace ClaimRequest.Application.Projects.GetListProjects
+{
+    public class GetListProjectsQuery : IPageableQuery, IQuery<Page<GetListProjectsResponse>>
+    {
+        public int PageNumber { get; init; }
+        public int PageSize { get; init; }
+
+    }
+}
